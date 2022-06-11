@@ -1,21 +1,14 @@
-import { useSession, signIn, signOut } from "next-auth/react";
-
 import * as S from "@styles/pages/home";
+import { signOut, useSession } from "next-auth/react";
 
 const Home = () => {
   const { data: session } = useSession();
-  if (session) {
-    return (
-      <S.Container>
-        Você está logado como {session?.user?.email} <br />
-        <button onClick={() => signOut()}>Sair do sistema</button>
-      </S.Container>
-    );
-  }
+
   return (
     <S.Container>
-      Faça login agora! <br />
-      <button onClick={() => signIn('google')}>Entrar</button>
+      <h1>Home do site</h1>
+      Você está logado como {session?.user?.email} <br />
+      <button onClick={() => signOut()}>Sair do sistema</button>
     </S.Container>
   );
 };
