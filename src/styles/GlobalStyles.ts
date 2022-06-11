@@ -5,7 +5,7 @@ export default createGlobalStyle`
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto','Montserrat', sans-serif;
+    font-family: 'Overlock','Montserrat', sans-serif;
   }
  
   html {

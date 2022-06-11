@@ -1,4 +1,5 @@
 import React from "react";
+import { FcGoogle } from "react-icons/fc";
 import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 
@@ -14,8 +15,17 @@ export default function Login() {
 
   return (
     <S.Container>
-      Faça login agora! <br />
-      <button onClick={() => signIn("google")}>Entrar</button>
+      <S.Content>
+        <h1>
+          3C
+          <br />
+          <span>Controle Cartão de Créditos</span>
+        </h1>
+        <button onClick={() => signIn("google")}>
+          <FcGoogle size={20} />
+          Entrar com Google
+        </button>
+      </S.Content>
     </S.Container>
   );
 }

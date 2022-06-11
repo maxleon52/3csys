@@ -6,5 +6,51 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 16px;
+  row-gap: 1rem;
+  width: 100%;
+  height: 100vh;
+`;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: fit-content;
+  background: #f4f4f2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  row-gap: 1rem;
+  padding: 1rem;
+
+  > h1 {
+    color: #495464;
+    text-align: center;
+    border-bottom: 1px solid #495464;
+
+    > span {
+      font-size: 1.125rem;
+    }
+  }
+
+  > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background: #495464;
+    color: #fff;
+    transition: all 0.2s;
+
+    :hover{
+      background-color: transparent;
+      border: 1px solid #495464;
+      color: #495464;
+    }
+  }
 `;
