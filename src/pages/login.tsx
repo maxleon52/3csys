@@ -10,7 +10,7 @@ export default function Login() {
   const route = useRouter();
 
   if (session) {
-    route.push("/dashboard");
+    route.push("/");
   }
 
   return (

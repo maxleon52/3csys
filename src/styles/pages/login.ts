@@ -42,14 +42,13 @@ export const Content = styled.div`
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 4px;
-    border: 1px solid transparent;
-    background: #495464;
-    color: #fff;
+    border: 1px solid #495464;
+    background: #fff;
+    color: #495464;
     transition: all 0.2s;
 
     :hover{
-      background-color: transparent;
-      border: 1px solid #495464;
+      border: 1px solid #FF5722;
       color: #495464;
     }
   }

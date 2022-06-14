@@ -29,6 +29,7 @@ export default createGlobalStyle`
   li{
     list-style: none;
   }
+ 
   // SCROLLBAR
   /* width */
   ::-webkit-scrollbar {
@@ -50,4 +51,15 @@ export default createGlobalStyle`
   ::-webkit-scrollbar-thumb:hover {
     opacity: 0.5;
   }
+
+  .container-app {
+    display: flex;
+    height: 100%;
+  }
+
+  .main-app{
+    border: 2px solid red;
+    width: 100%;
+  }
+  
 `;
